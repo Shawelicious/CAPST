@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="./images/logo.png" alt="Company Logo" class="logo">
+        </div>
+
+        <h2>Reservation Form</h2>
+
+        <!-- Preferred Schedule -->
+        <div class="schedule-section">
+            <label for="preferred-schedule">Preferred Schedule</label>
+            <input id="preferred-schedule" class="input" placeholder="Select a date">
+            <div id="remaining-pax" class="pax-info">Remaining PAX for Selected Date: <strong id="pax-count">100</strong></div>
+        </div>
+
+        <!-- Time Slot Selection -->
+        <div class="time-slot-section">
+            <label for="time-slot">Select Time Slot</label>
+            <select id="time-slot" class="input">
+                <option value="">- Select -</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="10:30 AM">10:30 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="1:30 PM">1:30 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="2:30 PM">2:30 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+            </select>
+        </div>
+
+        <!-- Guest Information -->
+        <div class="guest-info">
+            <h3>Guest Information</h3>
+            <div id="guest-list">
+                <div class="guest-fields">
+                    <input type="text" class="guest-name input" placeholder="Name">
+                    <input type="text" class="guest-number input" placeholder="Age">
+                    <button type="button" class="add-guest">+</button>
+                    <button type="button" class="remove-guest">-</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Number of PAX -->
+        <label for="number-pax">Number of PAX [ Maximum per day is 100 ]</label>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button type="button" class="pay-now">Pay Now</button>
+            <button type="button" class="cancel-reservation">Cancel Reservation</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

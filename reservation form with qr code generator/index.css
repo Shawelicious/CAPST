@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #104614;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #202327;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.input, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: #313336;
+    color: white;
+    border: none;
+}
+
+.pax-info {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #1DA1F2;
+}
+
+/* Guest Information */
+.guest-info {
+    margin-top: 1rem;
+}
+
+.guest-fields {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.add-guest {
+    background-color: #1DA1F2;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-guest:hover {
+    background-color: #1A8CD8;
+}
+
+.remove-guest {
+    background-color: #FF4D4D;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.remove-guest:hover {
+    background-color: #CC0000;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.pay-now {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    width: 48%;
+    text-align: center;
+}
+
+.pay-now:hover {
+    background-color: #218838;
+}
+
+.cancel-reservation {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    width: 48%;
+    text-align: center;
+}
+
+.cancel-reservation:hover {
+    background-color: #c82333;
+}
+
+/* Ensure red numbers display correctly under each day */
+.flatpickr-day {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flatpickr-day .pax-label {
+    position: absolute;
+    bottom: -16px;
+    font-size: 0.575rem;
+    color: red;
+    pointer-events: none; /* Prevent interaction with the label */
+}
+
+/* Logo Section */
+.logo-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    max-width: 100px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%; /* Optional: Make it circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
